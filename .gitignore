@@ -1,0 +1,7 @@
+# Generated output files and caches.
+bazel-*
+venv
+__pycache__
+
+# User-specific .bazelrc.
+user.bazelrc

@@ -1,0 +1,16 @@
+agents:
+  queue: hosted-macos
+steps:
+  - label: ":bazel: Build the package and app"
+    commands:
+      - bazel build //...
+    artifact_paths:
+      - bazel-bin/package/dist/*
+
+  - label: ":bazel: Test the package and app"
+    commands:
+      - bazel test //...
+
+  - label: ":bazel: Run the app"
+    commands:
+      - bazel run //app:main

@@ -1,0 +1,5 @@
+# Emit the output of test failures.
+common --test_output=ALL
+
+# Use the locally defined remote cache and other settings, if any.
+try-import %workspace%/user.bazelrc

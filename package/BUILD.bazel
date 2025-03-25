@@ -1,0 +1,31 @@
+load("@rules_python//python:defs.bzl", "py_test")
+load("@rules_python//python:packaging.bzl", "py_wheel", "py_wheel_dist")
+
+py_library(
+    name = "hello",
+    srcs = ["hello.py"],
+    visibility = ["//visibility:public"],
+    deps = [],
+)
+
+py_wheel(
+    name = "hello_wheel",
+    distribution = "hello",
+    version = "0.0.12",
+    deps = [],
+)
+
+py_wheel_dist(
+    name = "hello_wheel_dist",
+    out = "dist",
+    wheel = ":hello_wheel",
+)
+
+py_test(
+    name = "test_hello",
+    srcs = ["test_hello.py"],
+    deps = [
+        ":hello"
+    ],
+    imports = ["."],
+)

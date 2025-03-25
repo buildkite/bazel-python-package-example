@@ -1,0 +1,21 @@
+load("@rules_python//python:defs.bzl", "py_binary", "py_test")
+load("@pip//:requirements.bzl", "requirement")
+
+py_binary(
+    name = "main",
+    srcs = ["main.py"],
+    deps = [
+        "//package:hello",
+        requirement("buildkite-sdk")
+    ],
+)
+
+py_test(
+    name = "test_main",
+    srcs = ["test_main.py"],
+    deps = [
+        ":main",
+        requirement("buildkite-sdk")
+    ],
+    imports = ["."],
+)
