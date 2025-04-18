@@ -14,3 +14,4 @@ steps:
   - label: ":bazel: Run the app"
     commands:
       - bazel run //app:main
+      
