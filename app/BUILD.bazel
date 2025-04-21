@@ -7,7 +7,7 @@ py_binary(
     srcs = ["main.py"],
     deps = [
         "//package:hello",
-        requirement("buildkite-sdk")
+        requirement("termcolor")
     ],
 )
 
@@ -15,8 +15,7 @@ py_test(
     name = "main_test",
     srcs = ["main_test.py"],
     deps = [
-        ":main",
-        requirement("buildkite-sdk")
+        ":main"
     ],
     imports = ["."],
 )
