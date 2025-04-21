@@ -1,5 +1,4 @@
 import unittest
-import json
 from main import greet
 
 class TestMain(unittest.TestCase):

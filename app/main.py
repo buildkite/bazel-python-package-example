@@ -1,4 +1,5 @@
-from buildkite_sdk import Pipeline, CommandStep
+from termcolor import cprint
+
 from package.hello import say_hi
 
 
@@ -6,5 +7,5 @@ def greet():
     response = say_hi()
     return f"The Python package says, '{response}'"
 
-
-print(greet())
+if __name__ == "__main__":
+   cprint(greet(), "red", attrs=["bold"])

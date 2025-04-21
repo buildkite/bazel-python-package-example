@@ -22,8 +22,8 @@ py_wheel_dist(
 )
 
 py_test(
-    name = "test_hello",
-    srcs = ["test_hello.py"],
+    name = "hello_test",
+    srcs = ["hello_test.py"],
     deps = [
         ":hello"
     ],

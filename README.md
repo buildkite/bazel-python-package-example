@@ -4,7 +4,7 @@ An example that builds a Python package with Bazel!
 
 [![Build status](https://badge.buildkite.com/c1aceace7262fa12e369bf19c6629afb9696943af9bc1d8057.svg)](https://buildkite.com/nunciato/bazel-python-package-example))
 
-This example uses Bazel to build and test a Python package and then use that package in another Python program configured with a third-party dependency. The repo is also configured with a Buildkite pipeline that uploads the Bazel-built Python package as a Buildkite [build artifact](https://buildkite.com/docs/pipelines/configure/artifacts). 
+This example uses Bazel to build and test a Python package and then use that package in another Python program configured with a third-party dependency. The repo is also configured with a Buildkite pipeline that uploads the Bazel-built Python package as a Buildkite [build artifact](https://buildkite.com/docs/pipelines/configure/artifacts).
 
 ```bash
 $ bazel build //...
@@ -42,6 +42,19 @@ OK
 //package:test_hello                                            (cached) PASSED in 0.4s
 
 Executed 0 out of 2 tests: 2 tests pass.
+```
+
+```bash
+$ bazel run requirements.update
+INFO: Analyzed target //app:requirements.update (15 packages loaded, 988 targets configured).
+INFO: Found 1 target...
+Target //app:requirements.update up-to-date:
+  bazel-bin/app/requirements.update
+INFO: Elapsed time: 0.541s, Critical Path: 0.38s
+INFO: 5 processes: 5 internal.
+INFO: Build completed successfully, 5 total actions
+INFO: Running command line: bazel-bin/app/requirements.update '--src=_main/app/requirements.txt' _main/app/requirements_lock.txt //app:requirements.update '--resolver=backtracking' --allow-unsafe --generate-hashes
+Updating app/requirements_lock.txt
 ```
 
 ```bash

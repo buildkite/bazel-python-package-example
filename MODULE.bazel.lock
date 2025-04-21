@@ -277,7 +277,7 @@
         "recordedFileInputs": {
           "@@rules_python~//tools/publish/requirements_linux.txt": "8175b4c8df50ae2f22d1706961884beeb54e7da27bd2447018314a175981997d",
           "@@rules_fuzzing~//fuzzing/requirements.txt": "ab04664be026b632a0d2a2446c4f65982b7654f5b6851d2f9d399a19b7242a5b",
-          "@@//app/requirements_lock.txt": "0687536ef6201f21c1539c133b385e205ac94e44620b55e36b6a263883002175",
+          "@@//app/requirements_lock.txt": "83aa3e5cfa7b1361e3d8098b2c7e73e93a8c92ecb516cd32c3c4e4977ccc3dde",
           "@@rules_python~//tools/publish/requirements_windows.txt": "7673adc71dc1a81d3661b90924d7a7c0fc998cd508b3cb4174337cef3f2de556",
           "@@protobuf~//python/requirements.txt": "983be60d3cec4b319dcab6d48aeb3f5b2f7c3350f26b3a9e97486c37967c73c5",
           "@@rules_python~//tools/publish/requirements_darwin.txt": "2994136eab7e57b083c3de76faf46f70fad130bc8e7360a7fed2b288b69e79dc"
@@ -288,24 +288,14 @@
           "RULES_PYTHON_REPO_DEBUG_VERBOSITY": null
         },
         "generatedRepoSpecs": {
-          "pip_311_buildkite_sdk": {
+          "pip_311_termcolor": {
             "bzlFile": "@@rules_python~//python/private/pypi:whl_library.bzl",
             "ruleClassName": "whl_library",
             "attributes": {
               "dep_template": "@pip//{name}:{target}",
               "python_interpreter_target": "@@rules_python~~python~python_3_11_host//:python",
               "repo": "pip_311",
-              "requirement": "buildkite-sdk==0.2.0"
-            }
-          },
-          "pip_311_pyyaml": {
-            "bzlFile": "@@rules_python~//python/private/pypi:whl_library.bzl",
-            "ruleClassName": "whl_library",
-            "attributes": {
-              "dep_template": "@pip//{name}:{target}",
-              "python_interpreter_target": "@@rules_python~~python~python_3_11_host//:python",
-              "repo": "pip_311",
-              "requirement": "pyyaml==6.0.2"
+              "requirement": "termcolor==3.0.1     --hash=sha256:a6abd5c6e1284cea2934443ba806e70e5ec8fd2449021be55c280f8a3731b611     --hash=sha256:da1ed4ec8a5dc5b2e17476d859febdb3cccb612be1c36e64511a6f2485c10c69"
             }
           },
           "pip_deps_310_numpy": {
@@ -2916,12 +2906,10 @@
               "repo_name": "pip",
               "extra_hub_aliases": {},
               "whl_map": {
-                "buildkite_sdk": "{\"pip_311_buildkite_sdk\":[{\"version\":\"3.11\"}]}",
-                "pyyaml": "{\"pip_311_pyyaml\":[{\"version\":\"3.11\"}]}"
+                "termcolor": "{\"pip_311_termcolor\":[{\"version\":\"3.11\"}]}"
               },
               "packages": [
-                "buildkite_sdk",
-                "pyyaml"
+                "termcolor"
               ],
               "groups": {}
             }
