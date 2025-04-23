@@ -7,7 +7,7 @@ steps:
     artifact_paths:
       - bazel-bin/package/dist/*
 
-  - label: ":bazel: Test the package and app"
+  - label: ":bazel: Test the package the app"
     commands:
       - bazel test //...
 
