@@ -1,8 +1,8 @@
 # bazel-python-package-example
 
-An example that builds a Python package with Bazel!
+ An example that shows how to build, test, and package a Python library with Bazel. 
 
-[![Build status](https://badge.buildkite.com/c1aceace7262fa12e369bf19c6629afb9696943af9bc1d8057.svg)](https://buildkite.com/nunciato/bazel-python-package-example))
+[![Build status](https://badge.buildkite.com/c1aceace7262fa12e369bf19c6629afb9696943af9bc1d8057.svg)](https://buildkite.com/nunciato/bazel-python-package-example)
 
 This example uses Bazel to build and test a Python package and then use that package in another Python program configured with a third-party dependency. The repo is also configured with a Buildkite pipeline that uploads the Bazel-built Python package as a Buildkite [build artifact](https://buildkite.com/docs/pipelines/configure/artifacts).
 
