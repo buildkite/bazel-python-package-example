@@ -1,5 +1,5 @@
 agents:
-  queue: hosted-macos
+  queue: macos
 steps:
   - label: ":bazel: Build the package and app"
     commands:
