@@ -7,7 +7,7 @@ py_binary(
     srcs = ["main.py"],
     deps = [
         "//package:hello",
-        requirement("termcolor")
+        requirement("termcolor"),
     ],
 )
 
