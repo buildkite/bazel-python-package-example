@@ -9,14 +9,16 @@ This repository is an example [Buildkite](https://buildkite.com/) pipeline that 
 
 [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
+<a href="https://buildkite.com/buildkite/bazel-python-package-example/builds/latest?branch=main">
+  <img width="2400" alt="Screenshot of Buildkite Bazel Python Package example pipeline" src=".buildkite/screenshot.png" />
+</a>
+<p align="left"><em>he Python package is built, tested, and uploaded as a Buildkite artifact using Bazel</em></p>
+
+
 <!-- docs:start -->
 ## How it works
 
 This example uses Bazel to build and test a Python package and then use that package in another Python program configured with a third-party dependency. The repo is also configured with a Buildkite pipeline that uploads the Bazel-built Python package as a Buildkite [build artifact](https://buildkite.com/docs/pipelines/configure/artifacts).
-
-```bash
-$ bazel build //...
-
 
 ```bash
 $ bazel build //...
@@ -78,4 +80,4 @@ The Python package says, 'Hi!'
 
 ## License
 
-See [Licence.md](Licence.md) (MIT)
+See [License.md](License.md) (MIT)
