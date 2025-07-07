@@ -5,7 +5,6 @@ color: "#F0FDF2"
 languages:
   - "Python"
   - "Starlark"
-  - "YAML"
 steps:
   - label: ":pipeline:"
     command: "buildkite-agent pipeline upload"
