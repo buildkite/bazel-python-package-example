@@ -1,11 +1,11 @@
 # Bazel Python Package Example
 
-[![Build status](https://badge.buildkite.com/f9b46d96710d254e34229ba68bb8797d0b8f1e64ac5abfecb9.svg)](https://buildkite.com/buildkite/bazel-python-package-example)
+[![Build status](https://badge.buildkite.com/f9b46d96710d254e34229ba68bb8797d0b8f1e64ac5abfecb9.svg)](https://buildkite.com/buildkite/bazel-python-package-example/builds/latest?branch=main)
 [![Add to Buildkite](https://img.shields.io/badge/Add%20to%20Buildkite-14CC80)](https://buildkite.com/new)
 
 This repository is an example [Buildkite](https://buildkite.com/) pipeline that builds, tests, and packages a Python library using [Bazel](https://bazel.build).
 
-👉 **See this example in action:** [buildkite.com/buildkite/bazel-python-package-example](https://buildkite.com/buildkite/bazel-python-package-example/builds/latest)
+👉 **See this example in action:** [buildkite.com/buildkite/bazel-python-package-example](https://buildkite.com/buildkite/bazel-python-package-example/builds/latest?branch=main)
 
 [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
@@ -80,4 +80,4 @@ The Python package says, 'Hi!'
 
 ## License
 
-See [License.md](License.md) (MIT)
+See [LICENSE.md](LICENSE.md) (MIT)
