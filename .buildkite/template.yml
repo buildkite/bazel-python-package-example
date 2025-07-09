@@ -1,0 +1,10 @@
+name: "Bazel Python Package Example"
+description: "An example pipeline that builds, tests, and packages a Python library using Bazel."
+emoji: ":bazel:"
+color: "#F0FDF2"
+languages:
+  - "Python"
+  - "Starlark"
+steps:
+  - label: ":pipeline:"
+    command: "buildkite-agent pipeline upload"
